@@ -1,0 +1,92 @@
+<body>
+    <div class="container">
+      <div class="login-container">
+        <span class="img-container">
+          <img
+            src="../../../assets/NSDC_Digital_Logo__1_-removebg-preview.png"
+            height="180"
+            width="180"
+          />
+        </span>
+        <span class="content-container">
+          <h1>Verify your Aaddhar</h1>
+          <!-- <p>Don't have an account? <span class="signUp">Sign Up!</span></p> -->
+          <hr class="hr" />
+          <label>Enter your Aaddhar</label>
+          <input
+            onKeyPress="if(this.value.length==12) return false;"
+            formControlName="cardNumber"
+            type="tel"
+            #ccNumber
+            (keyup)="cardNumberSpacing()"
+          />
+          <button class="button" [disabled]="a">
+            <span>Send OTP </span>
+          </button>
+          <button class="clicked-button">
+            <span class="dot-floating"></span>
+          </button>
+          <div class="otp-group">
+            <input
+              type="tel"
+              class="otp-input"
+              name="otp1"
+              formControlName="otp1"
+              onKeyPress="if(this.value.length==1) return false;"
+              (keyup)="changeFocus(1)"
+            />
+            <input
+              type="tel"
+              class="otp-input otp2"
+              id="otp2"
+              name="otp2"
+              #otp2
+              formControlName="otp2"
+              onKeyPress="if(this.value.length==1) return false;"
+              (keyup)="changeFocus(2)"
+            />
+            <input
+              type="tel"
+              class="otp-input"
+              name="otp3"
+              #otp3
+              (keyup)="changeFocus(3)"
+              formControlName="otp3"
+              onKeyPress="if(this.value.length==1) return false;"
+            />
+            <input
+              type="tel"
+              class="otp-input"
+              name="otp4"
+              #otp4
+              (keyup)="changeFocus(4)"
+              formControlName="otp4"
+              onKeyPress="if(this.value.length==1) return false;"
+            />
+            <input
+              type="tel"
+              class="otp-input"
+              name="otp5"
+              #otp5
+              (keyup)="changeFocus(5)"
+              formControlName="otp5"
+              onKeyPress="if(this.value.length==1) return false;"
+            />
+            <input
+              type="tel"
+              class="otp-input"
+              name="otp6"
+              #otp6
+              formControlName="otp6"
+              onKeyPress="if(this.value.length==1) return false;"
+            />
+          </div>
+        </span>
+      </div>
+    </div>
+  
+    <div class="footer">
+      <p></p>
+    </div>
+  </body>
+  
