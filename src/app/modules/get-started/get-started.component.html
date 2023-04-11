@@ -7,6 +7,64 @@
       <label>Mobile Number</label>
       <input type="text" placeholder="xxxxx-xxxxx" />
       <button class="button"><span>Send OTP </span></button>
+      <span>
+        <div class="otp-group">
+          <input
+            type="tel"
+            class="otp-input"
+            name="otp1"
+            formControlName="otp1"
+            onKeyPress="if(this.value.length==1) return false;"
+            (keyup)="changeFocus(1)"
+          />
+          <input
+            type="tel"
+            class="otp-input otp2"
+            id="otp2"
+            name="otp2"
+            #otp2
+            formControlName="otp2"
+            onKeyPress="if(this.value.length==1) return false;"
+            (keyup)="changeFocus(2)"
+          />
+          <input
+            type="tel"
+            class="otp-input"
+            name="otp3"
+            #otp3
+            (keyup)="changeFocus(3)"
+            formControlName="otp3"
+            onKeyPress="if(this.value.length==1) return false;"
+          />
+          <input
+            type="tel"
+            class="otp-input"
+            name="otp4"
+            #otp4
+            (keyup)="changeFocus(4)"
+            formControlName="otp4"
+            onKeyPress="if(this.value.length==1) return false;"
+          />
+          <input
+            type="tel"
+            class="otp-input"
+            name="otp5"
+            #otp5
+            (keyup)="changeFocus(5)"
+            formControlName="otp5"
+            onKeyPress="if(this.value.length==1) return false;"
+          />
+          <input
+            type="tel"
+            class="otp-input"
+            name="otp6"
+            #otp6
+            formControlName="otp6"
+            onKeyPress="if(this.value.length==1) return false;"
+          />
+        </div>
+        <button class="button"><span>Submit </span></button>
+      </span>
     </span>
   </span>
 
@@ -20,7 +78,9 @@
         Get quick and stress-free verification with our app's automated ID
         storage and API integration with Indian government databases.
       </p>
-      <button class="button" (click)="changeModal()" ><span>Get Started </span></button>
+      <button class="button" (click)="changeModal()">
+        <span>Get Started </span>
+      </button>
     </div>
     <div class="right">
       <img src="../../../assets/NSDC_Digital_Logo__1_-removebg-preview.png" />
