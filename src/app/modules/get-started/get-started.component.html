@@ -1,0 +1,29 @@
+<body>
+  <span class="login-container" *ngIf="openModal">
+    <span class="content-container">
+      <h1>Login to your account!</h1>
+      <p>Don't have an account? <span class="signUp">Sign Up!</span></p>
+      <hr class="hr" />
+      <label>Mobile Number</label>
+      <input type="text" placeholder="xxxxx-xxxxx" />
+      <button class="button"><span>Send OTP </span></button>
+    </span>
+  </span>
+
+  <div class="container" *ngIf="!openModal">
+    <div class="left">
+      <h2>
+        Streamline your documentation verification process with our startup's
+        app.
+      </h2>
+      <p>
+        Get quick and stress-free verification with our app's automated ID
+        storage and API integration with Indian government databases.
+      </p>
+      <button class="button" (click)="changeModal()" ><span>Get Started </span></button>
+    </div>
+    <div class="right">
+      <img src="../../../assets/NSDC_Digital_Logo__1_-removebg-preview.png" />
+    </div>
+  </div>
+</body>
