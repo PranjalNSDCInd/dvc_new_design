@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PancardVerificationComponent } from './modules/pancard-verification/pancard-verification.component';
 import { GstVerificationComponent } from './modules/gst-verification/gst-verification.component';
 import { DrivingLicenceVerificationComponent } from './modules/driving-licence-verification/driving-licence-verification.component';
+import { TopNavbarComponent } from './modules/top-navbar/top-navbar.component';
 
 
 
@@ -25,7 +26,8 @@ import { DrivingLicenceVerificationComponent } from './modules/driving-licence-v
     GetStartedComponent,
     PancardVerificationComponent,
     GstVerificationComponent,
-    DrivingLicenceVerificationComponent
+    DrivingLicenceVerificationComponent,
+    TopNavbarComponent
   ],
   imports: [
     BrowserModule,
