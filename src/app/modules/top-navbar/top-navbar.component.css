@@ -33,6 +33,13 @@
     letter-spacing: 2px;
     text-decoration: none;
     color: white;
+    height: 100px;
+    width: 100px;
+  }
+
+  .topnav-logo{
+    height: 120px;
+    width: 120px;
   }
   
   .nav-links {
