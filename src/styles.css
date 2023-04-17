@@ -20,8 +20,6 @@ body {
   background-color: black;
   background-size: cover;
   color: white;
-
- 
+  fill-opacity: 1;
+  background-color: rgba(0,0,0,0.75);
 }
-
-
